@@ -1,0 +1,120 @@
+/* 
+TABLE OF CONTENTS 
+
+1. JUMBOTRON 
+
+2. GENERAL ELEMENTS
+
+3. BADGES, ICONES AND IMAGES 
+
+4. FORMS
+
+
+
+*/
+
+/* 1. JUMBOTRON */
+
+.jumbotron {
+	background-image: url("file:///Users/katielouw/Documents/dune8/header1.JPG");
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	color: #fff;
+	padding: 215px 0 165px;
+}
+
+.jumbotron .container {
+	background-color: rgba(50,50,50,0.6);
+	max-width: 660px;
+	padding: 0px 20px 15px 30px;
+	margin-left: 150px;
+}
+
+/* 2. GENERAL ELEMENTS */
+
+h1 {
+	font-family: 'Raleway', helvetica, sans-serif;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: 'Raleway' helvetica, sans-serif;
+	margin-top: 28px;
+}
+
+h3 {
+	font-family:'Raleway' helvetica, sans-serif;
+	margin-top: 26px;
+}
+
+.navbar-nav li {
+	font-family: 'Raleway' helvetica, sans-serif;
+}
+
+.navbar-brand {
+	font-family: 'Raleway' helvetica, sans-serif;
+	font-size: 42px;
+	line-height: 30px;
+	color: #6A6B5F;
+}
+
+#eight {
+	color: #ECBE13;
+
+}
+
+footer {
+	margin-top: 1em;
+	padding: 6em;
+	background-color: #F9C416;
+	width: 100%;
+}
+
+#copyright {
+	background: #F1BE15;
+	padding: 2em;
+	color: #6A6B5F;
+}
+/* 3. BADGES, BUTTONS ICONS AND IMAGES  */
+
+/*3.1 BADGES */
+
+.badge {
+	max-width: 40%;
+	margin: 3em;
+}
+
+/* 3.2 BUTTONS */
+.btn {
+	background-color: #0ABAB5;
+}
+
+/* 3.4 IMAGES */
+
+figure {
+	background-color: #fff;
+}
+
+/* 3.2 BUTTONS */
+
+#send-message {
+	margin-left: 1em;
+	margin-top: 1em;
+	padding: 0.75em;
+
+}
+
+
+/* 4. FORMS */
+
+#message {
+	height: 10em;
+	
+}
+
+.form-control {
+	padding: 1em;
+	font-size: 1.2em;
+	background: #eeeeee;
+}
