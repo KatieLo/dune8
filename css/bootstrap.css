@@ -2247,7 +2247,7 @@ textarea.input-lg {
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2327,11 +2327,7 @@ fieldset[disabled] .btn-default.active {
   border-color: #cccccc;
 }
 
-.btn-primary {
-  color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
-}
+
 
 .btn-primary:hover,
 .btn-primary:focus,
@@ -5224,15 +5220,7 @@ a.list-group-item.active > .badge,
   margin-left: 3px;
 }
 
-.jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
-  font-size: 21px;
-  font-weight: 200;
-  line-height: 2.1428571435;
-  color: inherit;
-  background-color: #eeeeee;
-}
+
 
 .jumbotron h1 {
   line-height: 1;
