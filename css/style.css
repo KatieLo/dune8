@@ -16,7 +16,6 @@ TABLE OF CONTENTS
 /* 1. JUMBOTRON */
 
 .jumbotron {
-  padding: 110px 0 100px;
   margin-bottom: 30px;
   background-image: url("../header1.JPG");
 	/*background-image: url("/dune8/header1.jpg");*/
@@ -32,8 +31,9 @@ TABLE OF CONTENTS
 
 .midground {
 	background-color: rgba(30,30,30,0.6);
-	padding: 200px;
-	margin: -100px 0 -100px 0;
+	padding: 110px 0 100px 10px;
+	color: #fff;
+
 
 }
 
@@ -41,7 +41,9 @@ TABLE OF CONTENTS
 	color: #fff;
 	max-width: 660px;
 	padding: 0px 20px 15px 30px;
-	margin-left: 150px;
+	display: block;
+    height: auto;
+  	
 }
 
 /* 2. GENERAL ELEMENTS */

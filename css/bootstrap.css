@@ -2247,7 +2247,7 @@ textarea.input-lg {
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 0px;
+  border-radius: 2px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2566,20 +2566,7 @@ fieldset[disabled] .btn-link:focus {
   text-decoration: none;
 }
 
-.btn-lg {
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;
-}
 
-.btn-sm,
-.btn-xs {
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-}
 
 .btn-xs {
   padding: 1px 5px;
@@ -5238,8 +5225,9 @@ a.list-group-item.active > .badge,
 @media screen and (min-width: 768px) {
   .jumbotron {
     padding-top: 48px;
-    padding-bottom: 48px;
+    
   }
+
   .container .jumbotron {
     padding-right: 60px;
     padding-left: 60px;
@@ -5247,6 +5235,10 @@ a.list-group-item.active > .badge,
   .jumbotron h1 {
     font-size: 63px;
   }
+
+  /*.foreground {
+    margin-left: 150px !important; 
+  } */
 }
 
 .thumbnail {
