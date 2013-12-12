@@ -467,7 +467,9 @@ figure {
 		font-size: 30px;
 	}
 
-	#case-study
-
-	a[href^=tel]{ color:#6A6B5F; font-weight:bolder; display:inline;}
+	.tel { 
+		color:#6A6B5F; 
+		font-weight:bolder; 
+		display:inline;
+	}
 }
