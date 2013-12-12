@@ -468,8 +468,7 @@ figure {
 	}
 
 	.tel { 
-		color:#6A6B5F; 
-		font-weight:bolder; 
-		display:inline;
+		text-decoration: none;
+		display: inline;
 	}
 }
