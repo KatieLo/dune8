@@ -316,6 +316,10 @@ footer a:hover {
 	color: #fed500;
 }
 
+.bio .fa {
+	margin: 0 5px 0 0;
+}
+
 .foreground .fa-envelope-o {
 	color: #fff;
 	font-size: 40px;
@@ -465,7 +469,5 @@ figure {
 
 	#case-study
 
-	.phone a {
-		display: inline;
-	}
+	a[href^=tel]{ color:#6A6B5F; font-weight:bolder; display:inline;}
 }
