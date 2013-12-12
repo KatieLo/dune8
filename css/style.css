@@ -13,30 +13,30 @@ TABLE OF CONTENTS
 
 */
 
-/* 1. JUMBOTRON */
+/* color palette 
+pale yellow: #ffe45c;
+lighter yellow: #fed500;
+darker-yellow: #F1BF26;
+dark grey: #6A6B5F;
+tiffany blue:#0ABAB5;
 
-.rotate {
+*/
 
-/* Safari */
--webkit-transform: rotate(-90deg);
 
-/* Firefox */
--moz-transform: rotate(-90deg);
 
-/* IE */
--ms-transform: rotate(-90deg);
 
-/* Opera */
--o-transform: rotate(-90deg);
+/* ------------------------------------------ *\
 
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+1. $JUMBOTRON 
 
-}
+\* ------------------------------------------ */
+
+
+
 
 .jumbotron {
   margin-bottom: 30px;
-  background-image: url("../header1.JPG");
+  background-image: url("../img/header1.JPG");
   background-repeat: none;
   background-size: cover;
   background-position: center;
@@ -44,15 +44,22 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
- 
+}
+
+#contact .jumbotron {
+	background-image: url("../img/header2.JPG");
+	padding: 110px 0 100px;
+	margin-bottom: 0;
 }
 
 .midground {
 	background-color: rgba(30,30,30,0.6);
 	padding: 110px 0 100px 10px;
 	color: #fff;
+}
 
-
+#contact .midground {
+	background-color: rgba(255,255,255,0.0);
 }
 
 .foreground {
@@ -64,11 +71,28 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   	
 }
 
+#contact .foreground {
+	background-color: #fed500;
+	font-weight: bolder;
+}
+
+
+
 .foreground h1 {
 	font-family: 'Open Sans', helvetica, sans-serif;
 }
 
-/* 2. GENERAL ELEMENTS */
+
+
+
+
+
+/* ------------------------------------------ *\
+
+ 2. $GENERAL ELEMENTS 
+
+\* ------------------------------------------ */
+
 
 h1 {
 	font-family: 'Open Sans', helvetica, sans-serif;
@@ -87,12 +111,13 @@ h3 {
 	font-weight: 200;
 }
 
+
 .headline {
 	text-align: center;
 	line-height: 35px;
 }
 
-#home .container {
+.container {
 	margin-top: 1em;
 }
 
@@ -127,8 +152,43 @@ h3 {
 }
 
 #eight {
+	display: inline-block;
 	color: #fed500;
+	padding-bottom: 8px;
 
+	/* Safari */
+	-webkit-transition: -webkit-transform 0.4s ease-in;
+
+	/* Firefox */
+	      -moz-transition: -moz-transform 0.4s ease-in;
+
+	/* IE */
+	        -ms-transition: -ms-transform 0.4s ease-in;
+	
+
+}
+
+.rotate:hover {
+	/* Safari */
+	-webkit-transform: rotate(90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(90deg);
+
+
+	/* IE */
+	-ms-transform: rotate(90deg);
+	
+	/* Opera */
+	-o-transform: rotate(90deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+
+}
+
+.spacer {
+	padding-top: 83px;
 }
 
 .wrapper {
@@ -145,12 +205,24 @@ h3 {
 
 footer {
 	width: 100%;
-	padding: 12em;
-	background-color: rgb(106,107,95);
-	opacity: 0.15;
+	padding: 10px 10px 50px 10px;
+	background-color: #eee;
 	color: #6A6B5F;
-	font-family: 'Raleway' helvetica, sans-serif;
-	
+	font-family: 'Open Sans' helvetica, sans-serif;	
+}
+
+footer a:hover {
+	color: black;
+	cursor: auto;
+}
+
+.contact-banner {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.contact-banner h2 {
+	font-weight: 400;
 }
 
 .copyright-container {
@@ -158,13 +230,78 @@ footer {
 	padding: 2em;
 }
 
+.copyright-container a {
+	color: #6A6B5F;
+}
+
+.copyright-container a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+
+.bio {
+	padding-top: 7px;
+}
+
+.bio a {
+	color: #F1BF26;
+}
+
+.bio a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+#address {
+	margin-left: 31px;
+}
+
 #copyright {
 	margin: 0;
+	padding: 10px;
 	color: #6A6B5F;
 	font-family: 'Raleway' helvetica, sans-serif;
 }
 
-/* 3. BADGES, BUTTONS ICONS AND IMAGES  */
+.copyright-container li {
+	float: right;
+	list-style: none;
+	display: inline;
+	padding: 10px;
+	font-family: 'Raleway' helvetica, sans-serif;
+}
+
+#footer-logo-container {
+	margin-top: 0 !important;
+}
+
+#footer-logo {
+	padding: 0;
+	font-size: 30px;
+}
+
+#contact .foreground h2 {
+	font-weight: 400;
+}
+
+
+#contact .foreground p{
+	float: left;
+	margin-top: 6px;
+}
+
+#contact .line {
+	height: 1px;
+	background-color: #ffe45c;
+}
+
+
+/* ------------------------------------------ *\
+
+ 3. $BADGES, BUTTONS ICONS AND IMAGES
+
+\* ------------------------------------------ */
 
 /*3.1 BADGES and ICONS*/
 
@@ -179,6 +316,18 @@ footer {
 	color: #fed500;
 }
 
+.foreground .fa-envelope-o {
+	color: #fff;
+	font-size: 40px;
+}
+
+.fa-map-marker {
+	float: left;
+	font-size: 25px;
+	color: #fff;
+}
+
+
 /* 3.2 BUTTONS */
 /*.btn {
 	background-color: ;
@@ -190,31 +339,14 @@ footer {
   border-color: #fed500;
 }
 
-/* Button Shading
-.btn-primary {
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#F1BF26), to(#fed500));
-  background-image: -webkit-linear-gradient(top, #F1BF26 0%, #fed500 100%);
-  background-image: -moz-linear-gradient(top, #F1BF26 0%, #fed500 100%);
-  background-image: linear-gradient(to bottom, #F1BF26 0%, #fed500 100%);
-  background-repeat: repeat-x;
-  border-color: #F1BF26;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff2d6ca2', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-} */
-
-/*.btn-info {
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#0AB1AD), to(#0ABAB5));
-  background-image: -webkit-linear-gradient(top, #0AB1AD 0%, #0ABAB5 100%);
-  background-image: -moz-linear-gradient(top, #0AB1AD 0%, #0ABAB5 100%);
-  background-image: linear-gradient(to bottom, #0AB1AD 0%, #0ABAB5 100%);
-  background-repeat: repeat-x;
-  border-color: #0ABAB5;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0AB1AD', endColorstr='#ff0ABAB5', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-} */
-
 .btn-info {
 	background-color: #0ABAB5;
+	margin-left: 10px;
+}
+
+.btn-info:hover,
+.btn-info:focus {
+	background-color: #09AAA6;
 }
 
 .btn-lg {
@@ -250,7 +382,16 @@ figure {
 	margin: 40px 0 40px 0;
 }
 
+.avatar {
+	height: 50px;
+	margin: 10px;
+	float: left;
+}
 
+
+.clear {
+	clear: both;
+}
 
 /* 3.2 BUTTONS */
 
@@ -261,8 +402,21 @@ figure {
 
 }
 
+#contact-button {
+	margin-top: 14px;
+	margin-bottom: 2em;
+}
 
-/* 4. FORMS */
+
+
+
+
+
+/* ------------------------------------------ *\
+
+ 4. $FORMS
+
+\* ------------------------------------------ */
 
 #message {
 	height: 10em;
@@ -273,4 +427,34 @@ figure {
 	padding: 1em;
 	font-size: 1.2em;
 	background: #eeeeee;
+}
+
+#contact-form {
+	margin-top: 2em;
+	margin-bottom: 2em;	
+}
+
+/* ------------------------------------------ *\
+
+ 5. $media queries 
+
+\* ------------------------------------------ */
+
+@media (max-width: 600px) {
+	#contact .foreground {
+		width: 100%;
+	}
+
+	#contact .jumbotron {
+		padding: 60px 0 0;
+		background-image: none;
+	}
+
+	#contact .jumbotron h2 {
+		font-size: 25px;
+	}
+
+	.foreground .fa-envelope-o {
+		font-size: 30px;
+	}
 }
