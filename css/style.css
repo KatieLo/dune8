@@ -441,6 +441,11 @@ figure {
 \* ------------------------------------------ */
 
 @media (max-width: 600px) {
+
+	.jumbotron {
+		background-image: url("../img/header1_mobi.JPG");
+	}
+
 	#contact .foreground {
 		width: 100%;
 	}
@@ -456,5 +461,11 @@ figure {
 
 	.foreground .fa-envelope-o {
 		font-size: 30px;
+	}
+
+	#case-study
+
+	.phone a {
+		display: inline;
 	}
 }
