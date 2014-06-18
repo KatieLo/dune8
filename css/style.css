@@ -100,13 +100,11 @@ h1 {
 
 h2 {
 	font-family: 'Open Sans' helvetica, sans-serif;
-	margin-top: 28px;
 	font-weight: 200;
 }
 
 h3 {
 	font-family:'Open Sans' helvetica, sans-serif;
-	margin-top: 26px;
 	font-weight: 200;
 }
 
@@ -337,7 +335,7 @@ footer a:hover {
 } */
 
 .btn-primary {
-  color: #6A6B5F;
+  color: #343434;
   background-color: #fed500;
   border-color: #fed500;
 }
@@ -385,6 +383,10 @@ figure {
 	margin: 40px 0 40px 0;
 }
 
+.work-icon {
+	text-align: center;
+}
+
 .avatar {
 	height: 75px;
 	margin: 10px;
@@ -394,6 +396,81 @@ figure {
 
 .clear {
 	clear: both;
+}
+
+/* remove spacing between middle columns */
+.row.no-gutter [class*='col-']:not(:first-child):not(:last-child) {
+  padding-right:0;
+  padding-left:0;
+}
+/* remove right padding from first column */
+.row.no-gutter [class*='col-']:first-child {
+  padding-right:0;
+}
+/* remove left padding from first column */
+.row.no-gutter [class*='col-']:last-child {
+  padding-left:0;
+}
+
+
+
+#fizanta {
+  background: url('../img/fizanta-logo.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+#youthinc {
+	background: url('../img/youthinc-logo.jpg') center center no-repeat;
+  	background-size: cover;
+}
+
+#steve {
+	background: url('../img/steve-logo.jpg') center center no-repeat;
+  	background-size: cover;
+}
+
+#music-phone{
+	margin: 0 auto;
+}
+
+.hover-cover {
+	background: #fed500;
+	width: 100%;
+	height: 300px;
+	position: relative;
+	text-align: center;
+	display: none;
+}
+
+.hover-cover p {
+	color: #343434;
+	border: 0;
+	padding: 10px;
+	position: absolute;
+	font-family: verdana, sans-serif;
+	width: 100%;
+}
+
+#our-work .hover-cover h3 {
+	color: #343434;
+	margin-top: 0;
+	padding-top: 30px;
+}
+
+.case-thumb:hover > .hover-cover {
+	display: block;
+}
+
+.case-thumb {
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	display: inline-block;
+}
+
+.case-thumb:hover {
+	cursor: pointer;
+	border: none;
 }
 
 /* 3.2 BUTTONS */
@@ -411,13 +488,27 @@ figure {
 }
 
 
+/* ------------------------------------------ *\
 
+ 4. $HOME
 
+\* ------------------------------------------ */
 
+#home h2 {
+	margin-top: 28px;
+}
+
+#home h3 {
+	margin-top: 26px;
+}
+
+.curlybrace{
+	color: #fed500;
+}
 
 /* ------------------------------------------ *\
 
- 4. $FORMS
+ 5. $FORMS
 
 \* ------------------------------------------ */
 
@@ -439,10 +530,78 @@ figure {
 
 /* ------------------------------------------ *\
 
- 5. $media queries 
+ 6. $Work
 
 \* ------------------------------------------ */
 
+#work .see-work {
+	padding-top: 75px;
+	margin-bottom: 50px;
+}
+
+.work-icons p {
+	margin-bottom: 30px;
+}
+
+#home .work-icons {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.case-element {
+	margin-top: 50px;
+}
+
+.case-image {
+	padding: 15px;
+}
+
+.btn.visit-site {
+	margin-top: 25px;
+}
+
+
+
+/* ------------------------------------------ *\
+
+ 7. $media queries 
+
+\* ------------------------------------------ */
+@media (max-width: 991px) {
+
+	.hover-cover {
+		height: 220px;
+	}
+
+	.case-thumb {
+		height: 220px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	.hover-cover {
+		width: 100%;
+	}
+
+	.case-thumb {
+		width: 50%;	
+	}
+
+	.row.no-gutter [class*='col-']:not(:first-child):not(:last-child) {
+	  padding-right: 15px;
+	  padding-left: 15px;
+	}
+	/* remove right padding from first column */
+	.row.no-gutter [class*='col-']:first-child {
+	  padding-right: 15px;
+	}
+	/* remove left padding from first column */
+	.row.no-gutter [class*='col-']:last-child {
+	  padding-left: 15px;
+	}
+
+}
 @media (max-width: 600px) {
 
 	.jumbotron {
@@ -469,5 +628,16 @@ figure {
 	.tel { 
 		text-decoration: none;
 		display: inline;
+	}
+
+	.case-thumb {
+		width: 80%;
+	}
+}
+
+@media (max-width: 480px) {
+	
+	.case-thumb {
+		width: 100%;
 	}
 }

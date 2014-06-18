@@ -67,7 +67,7 @@ function get_header() {
               <a href="#">About</a>
             </li>
             <li>
-              <a href="#">Case Study</a>
+              <a href="work.php">Our Work</a>
             </li>
             <li>
               <a href="#">Get in Touch</a>
