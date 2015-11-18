@@ -78,7 +78,8 @@ tiffany blue:#0ABAB5;
 
 
 .foreground h1 {
-	font-family: 'Open Sans', helvetica, sans-serif;
+	font-family: 'Work Sans', helvetica, sans-serif;
+	font-weight: 100;
 }
 
 
@@ -94,18 +95,23 @@ tiffany blue:#0ABAB5;
 
 
 h1 {
-	font-family: 'Open Sans', helvetica, sans-serif;
-	font-weight: 200;
+	font-family: 'Work Sans', helvetica, sans-serif;
+	font-weight: 400;
 }
 
 h2 {
-	font-family: 'Open Sans' helvetica, sans-serif;
-	font-weight: 200;
+	font-family: 'Work Sans' helvetica, sans-serif;
+	font-weight: 400;
 }
 
 h3 {
-	font-family:'Open Sans' helvetica, sans-serif;
-	font-weight: 200;
+	font-family:'Work Sans' helvetica, sans-serif;
+	font-weight: 400;
+}
+
+p {
+	font-family:'Work Sans' helvetica, sans-serif;
+	font-weight: 400;
 }
 
 
@@ -119,14 +125,14 @@ h3 {
 }
 
 #tagline {
-	font-family: 'Open Sans' helvetica, sans-serif;
+	font-family: 'Work Sans' helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 16px;
 
 }
 
 #three-liner {
-	font-family: 'Open Sans', helvetica, sans-serif;
+	font-family: 'Work Sans', helvetica, sans-serif;
 	font-weight: 300;
 	text-align: justify;	
 	font-size: 16px;	
@@ -138,11 +144,11 @@ h3 {
   opacity: 0.98;
 }
 .navbar-nav li {
-	font-family: 'Raleway' helvetica, sans-serif;
+	font-family: 'Libre Baskerville', serif;
 }
 
 .navbar-brand {
-	font-family: 'Raleway' helvetica, sans-serif;
+	font-family: 'Libre Baskerville', serif;
 	font-size: 42px;
 	line-height: 30px;
 	color: #6A6B5F;
@@ -193,7 +199,7 @@ h3 {
 }
 
 .wrapper h3 {
-	font-family: 'Raleway' helvetica, sans-serif;
+	font-family: 'Libre Baskerville', serif;
 	font-weight: 200;
 	color: #fff;
 	text-align: center;
@@ -205,7 +211,7 @@ footer {
 	padding: 10px 10px 50px 10px;
 	background-color: #eee;
 	color: #6A6B5F;
-	font-family: 'Open Sans' helvetica, sans-serif;	
+	font-family: 'Work Sans' helvetica, sans-serif;	
 }
 
 footer a:hover {
@@ -258,7 +264,7 @@ footer a:hover {
 	margin: 0;
 	padding: 10px;
 	color: #6A6B5F;
-	font-family: 'Raleway' helvetica, sans-serif;
+	font-family: 'Libre Baskerville', serif;
 }
 
 .copyright-container li {
@@ -266,7 +272,7 @@ footer a:hover {
 	list-style: none;
 	display: inline;
 	padding: 10px;
-	font-family: 'Raleway' helvetica, sans-serif;
+	font-family: 'Libre Baskerville', serif;
 }
 
 #footer-logo-container {
@@ -442,6 +448,10 @@ figure {
 	display: none;
 }
 
+.hover-cover h3 {
+	font-family: 'Libre Baskerville', serif;
+}
+
 .hover-cover p {
 	color: #343434;
 	border: 0;
@@ -449,6 +459,12 @@ figure {
 	position: absolute;
 	font-family: verdana, sans-serif;
 	width: 100%;
+}
+
+.hover-cover .case-study-text {
+	position: absolute;
+	bottom: -15px;
+	font-family: 'Libre Baskerville', serif;
 }
 
 #our-work .hover-cover h3 {
