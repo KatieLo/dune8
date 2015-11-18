@@ -64,7 +64,7 @@ tiffany blue:#0ABAB5;
 
 .foreground {
 	color: #fff;
-	max-width: 660px;
+	max-width: 700px;
 	padding: 0px 20px 15px 30px;
 	display: block;
     height: auto;
@@ -80,6 +80,12 @@ tiffany blue:#0ABAB5;
 .foreground h1 {
 	font-family: 'Work Sans', helvetica, sans-serif;
 	font-weight: 100;
+}
+
+.foreground .jumbo-button {
+	display: block;
+	width: 200px;
+	margin: 0 auto;
 }
 
 
@@ -128,6 +134,7 @@ p {
 	font-family: 'Work Sans' helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 16px;
+	text-align: center;
 
 }
 
@@ -336,9 +343,6 @@ footer a:hover {
 
 
 /* 3.2 BUTTONS */
-/*.btn {
-	background-color: ;
-} */
 
 .btn-primary {
   color: #343434;
