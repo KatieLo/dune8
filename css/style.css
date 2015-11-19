@@ -439,6 +439,11 @@ figure {
   	background-size: cover;
 }
 
+#orms {
+	background: url('../img/orms-logo.jpg') center center no-repeat;
+  	background-size: cover;
+}
+
 #music-phone{
 	margin: 0 auto;
 }
@@ -554,6 +559,15 @@ figure {
 
 \* ------------------------------------------ */
 
+#work h1 {
+	font-family: 'Libre Baskerville', serif;
+}
+#work h2 {
+	font-family: 'Libre Baskerville', serif;
+}
+#work h3 {
+	font-family: 'Libre Baskerville', serif;
+}
 #work .see-work {
 	padding-top: 75px;
 	margin-bottom: 50px;
